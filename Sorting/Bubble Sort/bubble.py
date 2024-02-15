@@ -1,8 +1,13 @@
 # Bubble Sort
 
-arr = [1, 3, 2]
+from ..randomArray import getRandomArray
+
+#arr = [1, 3, 2]
+arr = getRandomArray(10)
 
 isSorted = False
+
+print(arr)
 
 while not isSorted:
     isSorted = True

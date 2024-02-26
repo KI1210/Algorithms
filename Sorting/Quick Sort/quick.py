@@ -1,6 +1,3 @@
-from ..randomArray import getRandomArray
-
-
 def quickSort(arr):
     if len(arr) <= 1:
         return arr
@@ -12,10 +9,3 @@ def quickSort(arr):
     greater = [x for x in arr if x > pivot]
 
     return quickSort(lesser) + equal + quickSort(greater)
-
-
-arr = getRandomArray(10)
-print(arr)
-
-arr = quickSort(arr)
-print(arr)

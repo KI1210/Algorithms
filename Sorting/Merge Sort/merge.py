@@ -1,6 +1,3 @@
-from ..randomArray import getRandomArray
-
-
 def mergeSort(arr):
     if len(arr) <= 1:
         return arr
@@ -32,12 +29,3 @@ def merge(leftArr, rightArr):
     arr.extend(rightArr[rightIdx:])
 
     return arr
-
-
-arr = getRandomArray(10)
-
-print(arr)
-
-arr = mergeSort(arr)
-
-print(arr)
